@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment System</title>
+    <link rel="stylesheet" href="gstarted.css">
+</head>
+<body>
+    <div class="payment-form">
+        <h2>Payment Information</h2>
+        <form id="payment-form">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+            <br>
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="text" id="expiry-date" name="expiry-date" required>
+            <br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+            <br>
+            <div class="submitlol">
+                <button type="submit">Submit Payment</button>
+            </div>
+            <a href="https://paypal.me/CampusConcern?country.x=US&locale.x=en_US">Pay with Paypal</a>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

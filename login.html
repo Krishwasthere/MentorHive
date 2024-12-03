@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<header>
+  <div class="header-container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <a href="index.html"></a>
+  </div>
+</header>
+<body>
+  <div class="container">
+    <div class="form-card">
+      <h1>Welcome Back</h1>
+      <p class="subtitle">One account for everything you need.</p>
+      <form id="login-form">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn" id="submit-button">Log In</button>
+      </form>
+      <p class="footer-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+  </div>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js"></script>
+  <script type="module" src="login.js"></script>
+</body>
+</html>

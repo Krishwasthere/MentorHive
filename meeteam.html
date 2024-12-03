@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Top bar styles */
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0071e3; /* Apple-inspired blue color */
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-family: Poppins, sans-serif;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .top-bar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    /* Team section styles */
+    #team {
+      text-align: center;
+      margin-top: 80px; /* Adjust for the fixed header */
+      font-family: Poppins, sans-serif;
+    }
+
+    #team h2 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    /* Team members grid */
+    .team-members {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 0 20px;
+      gap: 40px;
+    }
+
+    /* Individual team member card */
+    .team-member {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      width: 250px;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Team member image */
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    /* Team member name and title */
+    .team-member h3 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .team-member p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* Social media buttons */
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .social-buttons button {
+      padding: 10px;
+      border: none;
+      background: #0071e3;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .social-buttons button:hover {
+      background: #005bb5;
+    }
+
+    .social-buttons img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Footer */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="left-section">
+      Meet the Team
+    </div>
+    <div class="right-section">
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <section id="team">
+    <h2>Our Team</h2>
+
+    <!-- Team Members Grid -->
+    <div class="team-members">
+      <!-- Team Member 1 -->
+      <div class="team-member">
+        <img src="nick.png" alt="Nicholas Pedri">
+        <h3>Nicholas Pedri</h3>
+        <p>CEO & Founder</p>
+        <p>Brief bio about Nicholas Pedri</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="team-member">
+        <img src="456041789_1062367168841861_8612532909759170209_n.jpg" alt="Krish Nekkanti">
+        <h3>Krish Nekkanti</h3>
+        <p>CEO & Founder</p>
+        <p>Phone: 1-(732)-837-8811</p>
+        <p>Email: <a href="mailto:krishnekkanti1@gmail.com">krishnekkanti1@gmail.com</a></p>
+        
+        <div class="social-buttons">
+          <a href="https://www.instagram.com/krishnekkanti1/" target="_blank">
+            <button><img src="instagram.webp" alt="Instagram"></button>
+          </a>
+          <a href="https://github.com/Krishwasthere" target="_blank">
+            <button><img src="github.png" alt="GitHub"></button>
+          </a>
+          <a href="https://x.com/KrishNekkanti" target="_blank">
+            <button><img src="Twitter-new-logo.jpeg" alt="X (Twitter)"></button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 MentorPro. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentor Hub</title>
+  <link rel="stylesheet" href="hub.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>Mentor Hub</h1>
+      </div>
+      <div class="user-info">
+        <span id="welcome-username">Loading...</span>
+        <div class="settings-dropdown">
+          <button id="settings-button" class="icon-button" title="Settings">⚙️</button>
+          <div class="dropdown-menu hidden">
+            <button id="logout-button">Log Out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search for users...">
+      <button id="search-button">🔍</button>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Update Username</h2>
+        <p class="notice">You can only change your username once every seven days.</p>
+        <form id="username-form">
+          <input type="text" id="username-input" placeholder="Enter your username" required>
+          <button type="submit">Save</button>
+        </form>
+        <!-- Close Button -->
+        <button id="close-modal" class="close-link">Close</button>
+      </div>
+    </div>
+    <div class="settings-dropdown">
+ 
+  <div class="dropdown-menu hidden">
+    <button id="logout-button">Log Out</button>
+  </div>
+</div>
+
+
+    <!-- Search Results -->
+    <div class="results-section">
+      <h2>Search Results</h2>
+      <ul id="search-results"></ul>
+    </div>
+  </div>
+
+
+  <script type="module" src="hub.js"></script>
+</body>
+
+</html>

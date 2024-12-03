@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f7; /* Apple-like light gray background */
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Top bar styles */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f2f2f7; /* Light gray background */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow for the top bar */
+            z-index: 1000;
+        }
+
+        .top-bar .left-section {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .top-bar .right-section a {
+            color: #0071e3; /* Apple's blue color */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .top-bar .right-section a:hover {
+            color: #005bb5; /* Darker blue on hover */
+        }
+
+        /* Main section styling */
+        #contact-section {
+            margin-top: 80px; /* Add space below the fixed top bar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #fff; /* White background for the contact section */
+        }
+
+        /* Form container styling */
+        .contact-form-container {
+            background-color: #fff;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0071e3;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Form input field styling */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #333;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            border-color: #0071e3; /* Focus effect with blue border */
+            outline: none;
+        }
+
+        /* Submit button styling */
+        button[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #0071e3;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #005bb5;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="top-bar">
+    <div class="left-section">Contact Us</div>
+    <div class="right-section"><a href="index.html">Home</a></div>
+</div>
+
+<!-- Main contact section -->
+<section id="contact-section">
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/84eb181051b62de36afd7f2b3b78f1f6" method="POST">
+            <!-- Hidden field for spam protection -->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Success page after form submission -->
+            <input type="hidden" name="_next" value="https://krishwasthere.github.io/MentorPro/successcontact.html"> 
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 MentorPro. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
